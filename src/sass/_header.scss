@@ -1,0 +1,48 @@
+.half-circle {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.navbar {
+  &-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.navbar-menu {
+  display: flex;
+  align-items: center;
+  gap: 0 40px;
+}
+
+.header {
+  &-container {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &-image {
+    max-width: 800px;
+    max-height: 711px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &-content {
+    max-width: 545px;
+  }
+}
+
+.header-heading {
+  margin-bottom: 40px;
+  font-size: 80px;
+  line-height: 120px;
+}

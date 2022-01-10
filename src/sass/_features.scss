@@ -1,0 +1,195 @@
+.features {
+  padding-top: 100px;
+  .title {
+    text-align: center;
+    margin-bottom: 39px;
+  }
+  &-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  &-right {
+    border-radius: 16px;
+    overflow: hidden;
+    width: 721px;
+    height: 554px;
+  }
+
+  &-heading {
+    display: flex;
+    justify-content: space-between;
+    &-left {
+      h3 {
+        color: #101010;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 40px;
+        margin-bottom: 17px;
+      }
+      input {
+        &::placeholder {
+          color: #c0c0c0;
+        }
+        font-size: 15px;
+        line-height: 15px;
+        margin-bottom: 56px;
+      }
+    }
+  }
+
+  &-card {
+    border-bottom: 1.2px solid #f0f0f0;
+    width: 448px;
+    margin-bottom: 92px;
+
+    &-title {
+      color: $secondary-color;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 30px;
+    }
+    input {
+      font-weight: 500;
+      font-size: 28px;
+      line-height: 40px;
+      margin-bottom: 33px;
+      &::placeholder {
+        color: $gray-color;
+      }
+    }
+    &-footer {
+      margin-bottom: 19px;
+      display: flex;
+      justify-content: space-between;
+      font-weight: 700;
+      font-size: 15px;
+      line-height: 15px;
+      color: #101010;
+      letter-spacing: 0.5%;
+    }
+    &-icon {
+      font-size: 20px;
+      color: $primary-color;
+    }
+
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
+
+  &-subscribe {
+    margin-top: 81px;
+    background: $gradient-color;
+    padding: 47px 75px;
+    width: 1292px;
+    height: 240px;
+    border-radius: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    &-content {
+      h3 {
+        font-weight: bold;
+        font-size: 34px;
+        line-height: 40px;
+        margin-bottom: 33px;
+      }
+      p {
+        font-size: 16px;
+        line-height: 28px;
+        opacity: 0.88;
+        max-width: 349px;
+      }
+    }
+
+    &-form {
+      display: flex;
+      width: 464px;
+
+      input {
+        width: 100%;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 15px;
+        color: #b1b1b1;
+        padding: 25px 20px;
+        letter-spacing: 0.005em;
+        border-radius: 15px 0px 0px 15px;
+
+        &::placeholder {
+          color: #b1b1b1;
+        }
+      }
+      button {
+        display: flex;
+        padding: 0 22px;
+        align-items: center;
+        gap: 0 12.5px;
+        background: $secondary-color;
+        box-shadow: 0px 10px 20px -10px rgba(234, 234, 234, 0.4);
+        border-radius: 0px 16px 16px 0px;
+        color: #fff;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+
+        .btn-icon {
+          position: relative;
+          width: 39px;
+          height: 39px;
+          background: #fff;
+          box-shadow: 0px 10px 20px -8px rgba(185, 66, 42, 0.19);
+          border-radius: 10px;
+
+          i {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: $secondary-color;
+            z-index: 2;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.circle1 {
+  width: 94px;
+  height: 94px;
+  border-radius: 50%;
+  background: #f6f7fb;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.circle2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  border: 6px solid $secondary-color;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  border-top-color: transparent;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0px 10px 21px -6px rgba(0, 0, 0, 0.1);
+}
+
+.text-circle {
+  z-index: 2;
+  letter-spacing: 0.005em;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 15px;
+  color: $secondary-color;
+}
