@@ -1,50 +1,53 @@
 import React from "react";
-import Button from "./Button";
+import { Link } from "react-router-dom";
+import Button from "./button/Button";
 
 const Navbar = () => {
   return (
     <header className="navbar">
       <div className="navbar-container">
         <div className="navbar-logo">
-          <a href="/" className="logo">
+          <Link to="/" className="logo">
             logo
-          </a>
+          </Link>
         </div>
         <ul className="navbar-menu">
           <li className="navbar-menu-item">
-            <a href="#header" className="navbar-menu-link">
+            <Link to="/#header" className="navbar-menu-link">
               Home
-            </a>
+            </Link>
           </li>
           <li className="navbar-menu-item">
-            <a href="#service" className="navbar-menu-link">
+            <Link to="/#service" className="navbar-menu-link">
               Service
-            </a>
+            </Link>
           </li>
           <li className="navbar-menu-item">
-            <a href="#menu" className="navbar-menu-link">
+            <Link to="/#menu" className="navbar-menu-link">
               Menu
-            </a>
+            </Link>
           </li>
           <li className="navbar-menu-item">
-            <a href="#features" className="navbar-menu-link">
+            <Link to="/#features" className="navbar-menu-link">
               Features
-            </a>
+            </Link>
           </li>
           <li className="navbar-menu-item">
-            <a href="/" className="navbar-menu-link">
+            <Link to="/contact-us" className="navbar-menu-link">
               Contact Us
-            </a>
+            </Link>
           </li>
           <li className="navbar-menu-item">
-            <a href="/" className="navbar-menu-link">
+            <Link to="about-us" className="navbar-menu-link">
               About Us
-            </a>
+            </Link>
           </li>
         </ul>
         <div className="navbar-btns">
-          <a href="/">Sign Up</a>
-          <Button className="btn btn-signin">Sign In</Button>
+          <Link to="/sign-up">Sign Up</Link>
+          <Button className="btn btn-signin" path="sign-in">
+            Sign In
+          </Button>
         </div>
       </div>
     </header>
